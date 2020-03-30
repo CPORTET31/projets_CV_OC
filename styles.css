@@ -1,0 +1,153 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+
+/* CORPS DU CV */
+body {
+    font-family: 'Montserrat',sans-serif;
+    padding: 20px;
+}
+
+
+
+/* GRID */
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper2 {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    margin-bottom: 30px;
+    display: grid;
+    grid-column-gap: 50px;
+}
+
+.wrapper3 {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-auto-rows: minmax(302px, auto);
+}
+
+.left-bar{
+    grid-column: 1;
+    grid-row-start: 1; 
+    grid-row-end: 8;
+    background-color: #FFCD00;
+    text-align: center;
+}
+
+.sec-profil {
+    grid-column:1;
+    grid-row : 1;
+}
+
+
+.sec-info {
+    grid-column:1;
+    grid-row : 2;
+}
+
+.sec-about {
+    grid-column:1;
+    grid-row : 3;
+}
+
+.sec-social {
+    grid-column:1;
+    grid-row : 8;
+}
+
+
+.right-bar { 
+    grid-column: 2/4;
+    grid-row-start: 1; 
+    grid-row-end: 8;
+}
+
+.sec-right {
+    grid-column:2/4;
+    grid-row : 1;
+}
+
+.sec-right2 {
+    grid-column:2/4;
+    grid-row : 2;$
+}
+
+.sec-right3 {
+    grid-column:2/4;
+    grid-row : 3;
+}
+.sec-right4 {
+    grid-column:2/4;
+    grid-row : 4;
+}
+
+.sec-right5 {
+    grid-column:2/4;
+    grid-row : 5;
+}
+
+.sec-right6 {
+    grid-column:2/4;
+    grid-row : 6;
+}
+
+.sec-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.sec-left2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.sec-left3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.sec-left4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.sec-left5 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.sec-left6 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.sec-left-reco {
+    grid-column : 1
+}
+
+.sec-right-reco {
+    grid-column : 2
+}
+
+
+
+
+/* LEFT-BAR */
+
+
+
+/* RIGHT-BAR */
+
