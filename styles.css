@@ -2,12 +2,37 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
 
 /* CORPS DU CV */
+
 body {
     font-family: 'Montserrat',sans-serif;
     padding: 20px;
 }
 
+h4 {
+    text-transform: uppercase;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    color: #404040; 
+}
 
+h5 {
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    color: #404040; 
+    font-weight:300;
+}
+
+p {
+    font-size: 11px;
+    color: #404040; 
+    word-spacing: 4px;
+    margin-block-start: auto;
+}
+
+
+i {
+    font-style: normal;
+}
 
 /* GRID */
 
@@ -145,7 +170,93 @@ body {
 
 
 
+
 /* LEFT-BAR */
+
+
+.img-circle {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: 3px solid rgba(40, 40, 40, 0.2);
+}
+
+.left-bar h1 {
+    background-color: #404040;
+    color: #FFCD00;
+    font-size: 20px;
+    padding:7px;
+}
+
+
+.left-bar ul.info {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: left;
+    list-style-type: none;
+    padding-inline-start:30px;
+    margin-inline-end: 30px;
+    
+}
+
+.left-bar ul.info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration:none;
+    font-size: 11px;
+}
+
+.left-bar ul.info a:hover i {
+    background: #ffff;
+}
+
+.left-bar ul.info i {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    color: #facd33;
+    background: #404040;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.left-bar .about {
+    text-align: justify;
+    padding-inline-start:30px;
+    margin-inline-end: 30px;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+.left-bar ul.social {
+    list-style-type: none;
+    display:flex;
+    width: 80%;
+    margin: 0 120px;
+    padding-bottom: 30px;
+}
+
+
+.left-bar ul.social i {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    color: #facd33;
+    background: #404040;
+}
+
 
 
 
