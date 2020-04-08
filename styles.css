@@ -1,6 +1,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
 
+/* VARIABLES */
+
+:root {
+    --jaune : #facd33;
+    --gris : #404040;
+}
+
 /* CORPS DU CV */
 
 body {
@@ -12,19 +19,19 @@ h4 {
     text-transform: uppercase;
     margin-block-start: 0.7em;
     margin-block-end: 0.7em;
-    color: #404040; 
+    color: var(--gris);
 }
 
 h5 {
     margin-block-start: 0.7em;
     margin-block-end: 0.7em;
-    color: #404040; 
+    color: var(--gris);
     font-weight:300;
 }
 
 p {
     font-size: 11px;
-    color: #404040; 
+    color: var(--gris);
     word-spacing: 4px;
     margin-block-start: auto;
 }
@@ -61,7 +68,7 @@ i {
     grid-column: 1;
     grid-row-start: 1; 
     grid-row-end: 11;
-    background-color: #FFCD00;
+    background-color: var(--jaune);
     text-align: center;
 }
 
@@ -196,8 +203,8 @@ i {
 }
 
 .left-bar h1 {
-    background-color: #404040;
-    color: #FFCD00;
+    background-color: var(--gris);
+    color: var(--jaune);
     font-size: 20px;
     padding:7px;
 }
@@ -216,7 +223,7 @@ i {
 .left-bar ul.info a {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--gris);
     text-decoration:none;
     font-size: 11px;
 }
@@ -233,8 +240,8 @@ i {
     text-align: center;
     font-size: 18px;
     line-height: 35px;
-    color: #facd33;
-    background: #404040;
+    color: var(--jaune);
+    background: var(--gris);
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -o-transition: all 200ms linear;
@@ -265,8 +272,8 @@ i {
     text-align: center;
     font-size: 18px;
     line-height: 35px;
-    color: #facd33;
-    background: #404040;
+    color: var(--jaune);
+    background: var(--gris);
 }
 
 
@@ -275,7 +282,7 @@ i {
 /* name */
 
 .wrapper2 ul {
-    color: #facd33;
+    color: var(--jaune);
     font-size: 20px;
     margin-block-start: auto;
     margin-block-end: 1em; 
@@ -295,7 +302,7 @@ i {
 }
 
 .right-bar .name h2 span {
-    color: #facd33;
+    color: var(--gris);
     font-weight: 400;
 }
 
@@ -303,16 +310,16 @@ i {
     font-size: 25px;
     font-weight: normal;
     margin-block-start: 0.3em;
-    color: #404040;
+    color: var(--gris);
 }
 
 .right-bar .name h3 span {
     margin: 0 0 30px 0;
-    border-bottom: 2px solid #facd33;
+    border-bottom: 2px solid var(--jaune);
 }
 
 .right-bar .name p span {
-    color: #facd33;
+    color: var(--jaune);
     font-weight: 900;
 }
 
@@ -320,7 +327,7 @@ i {
 
 .input_icon {
     margin-right: 20px;
-    color: #facd33;
+    color: var(--jaune);
 }
 
 
@@ -332,7 +339,7 @@ i {
 }
 
 .color-list {
-    color:#404040;
+    color: var(--gris);
     font-weight: 600;
     font-size: 13px;
 }
@@ -340,7 +347,7 @@ i {
 .right-bar h1 {
     margin: 0 0 30px 0;
     padding: 0 0 5px 0;
-    border-bottom: 2px solid #facd33;
+    border-bottom: 2px solid var(--jaune);
     text-transform: uppercase;
 }
 
@@ -355,14 +362,9 @@ i {
   padding-bottom:30px;
 }
 
-#experiences span {
-  color: #ff5335;
-}
-
 .right-bar .skills section {
     margin-bottom: 9px;
     overflow: auto;
-
 }
 
 .right-bar .skills section p {
@@ -381,9 +383,7 @@ i {
     background: #bbb;
 }
 
-.right-bar .skills section span.full {
-    background: #ff5335;
-}
+
 
 
 /* Recommandations */
@@ -437,9 +437,15 @@ i {
         width: auto;
     }
 
-    .body {
+    body {
         padding : 0px;
     }
 
+}
 
+@media (max-width: 600px) 
+{
+    :root {
+        --jaune : rgba(255, 220, 125, 0.767);
+    }
 }
