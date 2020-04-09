@@ -8,7 +8,7 @@
     --gris : #404040;
 }
 
-/* CORPS DU CV */
+/* BODY CV */
 
 body {
     font-family: 'Montserrat',sans-serif;
@@ -36,14 +36,11 @@ p {
     margin-block-start: auto;
 }
 
-
 i {
     font-style: normal;
 }
 
-
 /* GRID */
-
 
 .wrapper {
     display: grid;
@@ -72,12 +69,10 @@ i {
     text-align: center;
 }
 
-
 .sec-name {
     grid-column:1;
     grid-row : 1;
 }
-
 
 .sec-info {
     grid-column:1;
@@ -95,7 +90,6 @@ i {
     grid-row : 11;
 }
 
-
 .right-bar { 
     grid-column: 2/4;
     grid-row-start: 1; 
@@ -107,41 +101,36 @@ i {
     grid-column:2/4;
     grid-row : 1;
     margin-bottom: 30px;
-
 }
 
 .sec-right2 {
     grid-column:2/4;
     grid-row : 2;
     margin-bottom: 30px;
-
 }
 
 .sec-right3 {
     grid-column:2/4;
     grid-row : 3;
     margin-bottom: 30px;
-
 }
+
 .sec-right4 {
     grid-column:2/4;
     grid-row : 4;
     margin-bottom: 30px;
-
 }
 
 .sec-right5 {
     grid-column:2/4;
     grid-row : 5;
     margin-bottom: 30px;
-
 }
 
 .sec-right6 {
     grid-column:2/4;
     grid-row : 6;
     margin-bottom: 30px;
-
 }
 
 .sec-left {
@@ -188,11 +177,7 @@ i {
     grid-column : 2
 }
 
-
-
-
 /* LEFT-BAR */
-
 
 .img-circle {
     width: 200px;
@@ -208,7 +193,6 @@ i {
     font-size: 20px;
     padding:7px;
 }
-
 
 .left-bar ul.info {
     margin-bottom: 30px;
@@ -263,7 +247,6 @@ i {
     padding-inline-start: 10px;
 }
 
-
 .left-bar ul.social i {
     width: 35px;
     height: 35px;
@@ -275,7 +258,6 @@ i {
     color: var(--jaune);
     background: var(--gris);
 }
-
 
 /* RIGHT-BAR */
 
@@ -302,7 +284,7 @@ i {
 }
 
 .right-bar .name h2 span {
-    color: var(--gris);
+    color: var(--jaune);
     font-weight: 400;
 }
 
@@ -330,9 +312,7 @@ i {
     color: var(--jaune);
 }
 
-
 /* formation & expérience professionnelle */
-
 
 .right-bar ul li:first-line {
     color: black;
@@ -357,7 +337,6 @@ i {
     font-size: 20px;
 }
 
-
 #experiences {
   padding-bottom:30px;
 }
@@ -375,16 +354,12 @@ i {
 
 .right-bar .skills section span {
     display: inline-block;
-    float: right;
     width: 15px;
     height: 15px;
     margin: 0 1px;
     border-radius: 15px;
     background: #bbb;
 }
-
-
-
 
 /* Recommandations */
 
@@ -400,11 +375,9 @@ i {
     text-transform: uppercase;
 }
 
+/* MEDIA QUERY */
 
-
-@media (max-width: 750px) 
-{
-
+@media (max-width: 750px) {
 
     .left-bar {
         grid-column: 1/4;
@@ -418,20 +391,16 @@ i {
         grid-row-start: 5; 
         grid-row-end: 10;
         padding : 0px 20px 20px;
-
     }
 
     .wrapper {
        display: contents;
     }
 
-
-    .left-bar
-    {
+    .left-bar {
         display: block;
         flex-direction: inherit;
     }
-
 
     .sec-about, .sec-social, .sec-name, .sec-info {
         width: auto;
@@ -440,12 +409,10 @@ i {
     body {
         padding : 0px;
     }
-
 }
 
-@media (max-width: 600px) 
-{
-    :root {
-        --jaune : rgba(255, 220, 125, 0.767);
-    }
+    @media (max-width: 600px) {
+        :root {
+            --jaune :#F7E090;
+        }
 }
