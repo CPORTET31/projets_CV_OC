@@ -210,6 +210,7 @@ i {
     color: var(--gris);
     text-decoration:none;
     font-size: 11px;
+    font-style: normal;
 }
 
 .left-bar ul.info a:hover i {
